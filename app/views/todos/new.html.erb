@@ -1,0 +1,9 @@
+<%= form_for @todo do |todo|%>
+  <%= todo.label :todo_task %>
+  <%= todo.text_field :task %>
+
+  <%= todo.label :finished? %>
+  <%= todo.check_box :finished %>
+
+  <%= todo.submit%>
+<% end %>

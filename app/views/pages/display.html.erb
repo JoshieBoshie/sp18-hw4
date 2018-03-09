@@ -1,0 +1,21 @@
+<div>
+  <h2>Your home</h2>
+  <h4>People</h4>
+  <p>
+    <% User.find_each do |user| %>
+    <%= user.Username %>
+    <% end %>
+  </p>
+  <h4>Cats</h4>
+  <p>
+    <% Cat.find_each do |cat| %>
+    <%= cat.name %>
+    <% end %>
+  </p>
+  <h4>Todos</h4>
+  <p>
+    <% Todo.find_each do |todo| %>
+    <%= todo.task %>
+    <% end %>
+  </p>
+</div>
