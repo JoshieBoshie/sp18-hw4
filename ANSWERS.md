@@ -7,7 +7,7 @@
   save
 
 3. What is the default integer column that exists on every table but we did NOT define?
-  Date time
+  ID Column
 
 4. What single line of ruby code can insert a cat with the name "Kira" in the database?
   Cat.create(name:"Kira")

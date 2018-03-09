@@ -5,9 +5,9 @@ class PagesController < ApplicationController
     @todos = Todo.find_each
   end
   def create
-    x = Cat.create(name:"Fool")
-    y = User.create(Username: "Joshie", email:"why u wanna no", age:18)
-    t = Todo.create(task: "finish this hw", finished:true)
+    #x = Cat.create(name:"Fool")
+    #y = User.create(Username: "Joshie", email:"why u wanna no", age:18)
+    #t = Todo.create(task: "finish this hw", finished:true)
   end
   def new
     @todo = Todo.new

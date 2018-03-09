@@ -2,20 +2,27 @@
   <h2>Your home</h2>
   <h4>People</h4>
   <p>
-    <% User.find_each do |user| %>
-    <%= user.Username %>
+    <pre>
+    <% @users.each do |user| %>
+    Username: <%= user.username %>
+    Email: <%= user.email %>
+    Age: <%= user.age %>
     <% end %>
+  </pre>
   </p>
   <h4>Cats</h4>
   <p>
     <% Cat.find_each do |cat| %>
-    <%= cat.name %>
+    Name: <%= cat.name %>
     <% end %>
   </p>
   <h4>Todos</h4>
   <p>
+    <pre>
     <% Todo.find_each do |todo| %>
-    <%= todo.task %>
+    Task: <%= todo.task %>
+    Finished?: <%= todo.finished %>
     <% end %>
+  </pre>
   </p>
 </div>
